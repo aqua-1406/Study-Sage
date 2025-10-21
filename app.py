@@ -1,8 +1,3 @@
-# Streamlit StudyBuddy using Flan-T5 (google/flan-t5-base)
-# Save as: app.py
-# Requirements:
-# pip install streamlit transformers sentencepiece PyMuPDF
-
 import math
 import re
 import os
@@ -170,8 +165,8 @@ def generate_quiz_from_text(text: str, tokenizer, gen_pipeline, per_chunk=5):
 
 # ------------------ STREAMLIT UI ------------------
 
-st.set_page_config(page_title="StudyBuddy (Flan-T5)", layout="wide")
-st.title("📚 StudyBuddy — Flan-T5 (google/flan-t5-base) — Offline")
+st.set_page_config(page_title="StudySage (Flan-T5)", layout="wide")
+st.title("📚 StudySage — Your Exam Partner")
 st.markdown(
     "Upload a PDF textbook. Chapters are auto-detected. Generate Flashcards, Quizzes, or Notes using Flan-T5 locally (plain text on screen)."
 )
@@ -244,4 +239,5 @@ else:
     st.info("Upload a PDF to begin. Use textbooks with consistent headings for best auto-detection.")
 
 
-# End of file
+
+
